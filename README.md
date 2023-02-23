@@ -1,7 +1,8 @@
 # 02-Advanced-CSS-Jasmines-Portfolio
 Portfolio showcasing **deployed applications** and course work learnt during **2023 USYD Coding Bootcamp**
 
-
+ ![Jasmine's Portfolio](assets/images/Jasmine's-Portfolio.png) 
+ 
 # Website Features
 You can access the following content via the websites navigation bar:
  * About Me <br />
