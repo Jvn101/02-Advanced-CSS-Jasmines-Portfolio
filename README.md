@@ -12,7 +12,7 @@ You can access the following content via the websites navigation bar:
 # Website Link
 
  Link to the deployed site:
- [Jasmine's Portfolio]()
+ [Jasmine's Portfolio](https://jvn101.github.io/02-Advanced-CSS-Jasmines-Portfolio/)
 
 ***
 ### Contact us
