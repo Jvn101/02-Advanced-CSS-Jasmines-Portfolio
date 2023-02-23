@@ -1,6 +1,5 @@
-/* create custom CSS variables (also called custom properties) and apply them to the root of the page, making them accessible to all other CSS */
+/* custom CSS design for portfolio website */
 :root {
-  /* declare a variable with `--` syntax have not implement this effectively in the below code yet*/
   --dark: #6082a2;
   --light: #fff;
   --navlink-color: #b9c6ae;
@@ -10,32 +9,6 @@ body {
   margin: 0%;
   font-family: sans-serif;
   background-color: #f4b9d7;
-  
-}
-
-
-
-section {
-  display: flex;
- 
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 2%;
-  
-}
-
-.container-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-.inner-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  box-sizing: border-box;
 }
 
 /* stylying for website name and navigation background box */
@@ -58,13 +31,6 @@ header h1 {
   margin: 0;
   display: flex;
   border: 50%;
-  
-}
-
-/*applied to website name - 'Jasmine'*/
-header h1:hover {
-  opacity: 0.7;
-  cursor: grab;
 }
 
 h1 {
@@ -72,56 +38,22 @@ h1 {
   color: var(--light);
 }
 
-.intro-image {
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  flex-direction: column;
+/*applied when hovering over website name - 'Jasmine'*/
+header h1:hover {
+  opacity: 0.7;
+  cursor: grab;
 }
 
-#about-me {
-
-}
-
-/* h2 {
-  margin: 2% 0;
-  padding: 0 20px 10px;
-  font-size: 250%;
-} */ 
-
-
-/* footer {
-  justify-content: space-between;
-  background-color: var(--dark);
-  color: var(--light);
-  /* min-width: 1000px; 
-  max-width: 1200px;
-  margin: 0 auto;
-  
-}
-
-footer.h1 {
-  position: relative;
-  align-items: center;
-  margin: 0; */
-
-
-
-/* I feel like i shouldn't need all the below code for nav but when i start to combine/take things out it ruins the website */
+/*navigation bar formatting start*/
 .top-nav {
   display: inline-block;
 }
-
-/* div {
-  display: flex;
-} */
 
 .top-nav ul {
   display: flex;
   gap: 20px;
   justify-content: space-between;
   align-items: center;
-  /* min-width: 500px; */
   list-style: none;
   font-size: 20px;
 }
@@ -136,8 +68,16 @@ nav a {
 nav a:hover {
   color: var(--light);
 }
+/*navigation bar formatting end*/
 
-/* avatar */
+/* avatar image formatting start*/
+.intro-image {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+}
+
 .avatar {
   min-width: 22vw;
   height: 40vh;
@@ -151,85 +91,53 @@ nav a:hover {
   align-items: left;
   border-radius:50%;
   border:#CCCCCC thin solid;
-  
 }
 
 .avatar:hover {
   opacity: 0.7;
   box-shadow: 10px 10px 40px 1px rgb(215, 121, 211);
 }
+/* avatar image formatting end*/
 
-
-/* .container-footer {
-  max-width: 1200px;
-  margin: 0 auto;
-} */
-
-
-footer{
+section {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: var(--dark);
-  min-height: 50px;
-  color: var(--navlink-color);
-  padding-left: 20px;
-  padding-right: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 2%;
 }
 
-
-footer a:hover {
-  color: var(--light);
+section p {
+  padding: 10px;
 }
 
-footer ul{
+/* main section portfolio images and text formatting*/
+.container-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.inner-container {
   display: flex;
-  font-size: 20px;
-  list-style: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
-footer ul li{
-  margin-left: 50px;
-}
-
-/* footer ul {
-  
-  gap: 200px;
-  justify-content: space-evenly;
-  list-style: none;
-  
-  background-color: var(--dark);
-  min-height: 50px;
-  align-items: center;
-
-  background-color: unset;
-  
- 
-} */
-
-
-/* Code card styles */
-/* Card flex properties, spacing and border */
 .card {
   box-sizing: border-box;
   width: 46%;
   border: 2px solid rgb(1, 1, 1);
   box-shadow: 10px 10px 40px 1px rgb(215, 121, 211);
   color: var(--dark);
-
-  
   padding: 0 72px 27px;
   margin: 0 20px 40px;
-
-  
   flex-direction: column;
   display: flex;
-  
   align-items: center;
   justify-content: center;
-
-  background-color: rgb(240, 219, 219);
-    
+  background-color: rgb(240, 219, 219); 
 }
 
 .card-feature {
@@ -237,35 +145,20 @@ footer ul li{
   padding: 0 15px 15px;
   margin: 0 20px 40px;
 }
-   
 
-/* Card header styles, including position relative deflection */
+/* Card header styles, including position */
 .card h2 {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 150%;
   width: 90%;
-
-
- 
-  /* border-radius: 5px;
-  position: relative;
-  top: -15px;
-  background-color: var(----darkd);
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5px; */
-
- 
 }
 
 .card img {
   max-width: 100%;
   align-items: center;
 }
-
-
 
 /* Setting mouse hover shadow animation */
 .card:hover,.card:hover h2 {
@@ -278,38 +171,53 @@ footer ul li{
   opacity: 0.7;
 }
 
+/* Footer formatting */
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark);
+  min-height: 50px;
+  color: var(--navlink-color);
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
+footer ul{
+  display: flex;
+  font-size: 20px;
+  list-style: none;
+}
 
-/* Cards are split into two columns at 992px or smaller */
+footer ul li{
+  margin-left: 50px;
+}
+
+footer a:hover {
+  color: var(--light);
+}
+
+/* dynamic view for screens 992px-769px */
 @media screen and (max-width: 992px) {
   header, main, body, article, section {
-
     flex-direction: column;
   }
-  /* section {
-    padding-right: 0;
-  } */
 
   /* Change the header color */
   header {
     background: #772014;
-    
   }
 }
 
-/* Cards are stacked on top of each other at 768px or smaller */
+/* dynamic view for screens 768px or smaller */
 @media screen and (max-width: 768px) {
   header, main ,body, article, section {
     flex-direction: column;
   }
-  /* section {
-    padding-right: 0;
-  } */
-
+ 
   /* Change the header color */
   header {
-    background: #8ac4ff;
-    
+    background: #3593f1;
   }
 }
 
